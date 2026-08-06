@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Alvaro Emanuel - Geoprocessamento Ambiental + IA">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04140c"/>
+      <stop offset="50%" stop-color="#0b2818"/>
+      <stop offset="100%" stop-color="#123524"/>
+    </linearGradient>
+
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#52b788" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#95d5b2" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#52b788" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-1 0; 1 0; -1 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#52b788" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#52b788" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#95d5b2" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#95d5b2" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 L0 0 0 30" fill="none" stroke="#52b788" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+
+    <clipPath id="card">
+      <rect x="0" y="0" width="900" height="220" rx="14"/>
+    </clipPath>
+
+    <!-- trajeto do "levantamento de campo" -->
+    <path id="track" d="M40 178 C 150 120, 210 196, 320 150 S 500 92, 610 132 S 790 96, 866 62" fill="none"/>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="900" height="220" fill="url(#bg)"/>
+    <rect width="900" height="220" fill="url(#grid)"/>
+
+    <!-- curvas de nivel -->
+    <g fill="none" stroke="#52b788" stroke-linecap="round">
+      <path d="M-20 196 C 120 150, 250 214, 400 176 S 700 128, 920 160" stroke-opacity="0.30" stroke-width="1.6">
+        <animate attributeName="stroke-opacity" values="0.30;0.55;0.30" dur="6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-20 170 C 130 122, 260 188, 410 148 S 710 100, 920 132" stroke-opacity="0.22" stroke-width="1.4">
+        <animate attributeName="stroke-opacity" values="0.22;0.45;0.22" dur="6s" begin="1s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-20 144 C 140 96, 270 162, 420 120 S 720 74, 920 106" stroke-opacity="0.16" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.16;0.36;0.16" dur="6s" begin="2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- poligono de area (desenha-se sozinho) -->
+    <path d="M636 168 L700 128 L780 142 L806 96 L742 68 L664 96 Z"
+          fill="#52b788" fill-opacity="0.10"
+          stroke="#95d5b2" stroke-opacity="0.75" stroke-width="1.8"
+          stroke-dasharray="420" stroke-dashoffset="420">
+      <animate attributeName="stroke-dashoffset" values="420;0;0;420" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <g fill="#95d5b2">
+      <circle cx="636" cy="168" r="2.6"><animate attributeName="r" values="2.6;4.2;2.6" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="806" cy="96" r="2.6"><animate attributeName="r" values="2.6;4.2;2.6" dur="3s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="742" cy="68" r="2.6"><animate attributeName="r" values="2.6;4.2;2.6" dur="3s" begin="0.7s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- pulso do "satelite" percorrendo o trajeto -->
+    <use href="#track" stroke="#52b788" stroke-opacity="0.35" stroke-width="1.4" stroke-dasharray="5 7"/>
+    <circle r="4.5" fill="#d8f3dc">
+      <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#track"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="11" fill="none" stroke="#52b788" stroke-width="1.2">
+      <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#track"/></animateMotion>
+      <animate attributeName="r" values="5;16;5" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.9;0;0.9" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- texto -->
+    <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif">
+      <text x="44" y="86" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+        Alvaro Emanuel
+        <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+      </text>
+      <rect x="46" y="100" width="0" height="3" rx="1.5" fill="url(#rule)">
+        <animate attributeName="width" values="0;300" dur="1.4s" begin="0.5s" fill="freeze"/>
+      </rect>
+      <text x="44" y="132" font-size="17" font-weight="600" fill="#95d5b2" opacity="0">
+        Geoprocessamento Ambiental + Inteligencia Artificial
+        <animate attributeName="opacity" values="0;1" dur="1s" begin="1.1s" fill="freeze"/>
+      </text>
+      <text x="44" y="158" font-size="14" fill="#7fbf9b" opacity="0">
+        Mato Grosso, Brasil  -  TypeScript / Python / QGIS / LLMs
+        <animate attributeName="opacity" values="0;1" dur="1s" begin="1.5s" fill="freeze"/>
+      </text>
+    </g>
+
+    <!-- brilho passando -->
+    <rect width="900" height="220" fill="url(#sheen)"/>
+
+    <rect x="0.5" y="0.5" width="899" height="219" rx="14" fill="none" stroke="#52b788" stroke-opacity="0.45" stroke-width="1"/>
+  </g>
+</svg>

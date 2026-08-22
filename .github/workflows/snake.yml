@@ -37,7 +37,11 @@ jobs:
       - name: Gerar card de sequencia
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 .github/scripts/streak_stats.py "${{ github.repository_owner }}" dist/streak.svg
+        run: |
+          # a action da cobrinha roda em Docker como root e deixa dist/ sem
+          # permissao de escrita pro usuario do runner
+          sudo chown -R "$(id -u):$(id -g)" dist
+          python3 .github/scripts/streak_stats.py "${{ github.repository_owner }}" dist/streak.svg
 
       - name: Conferir saidas
         run: |

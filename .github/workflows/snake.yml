@@ -1,11 +1,16 @@
-name: Generate snake animation
+name: Animacoes do perfil
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches: [main]
+
+# uma execucao por vez: as duas saidas vao pro mesmo branch "output"
+concurrency:
+  group: animacoes-do-perfil
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -15,7 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: Platane/snk@v3
+      # 1) cobrinha comendo as contribuicoes -> dist/*.svg
+      - name: Gerar cobrinha
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
@@ -24,7 +31,27 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      # 2) card de sequencia de commits -> dist/streak.svg
+      #    gerado aqui dentro para nao depender de servico publico de terceiro
+      #    (streak-stats.demolab.com estourava o rate limit e o camo cacheava o erro)
+      - name: Gerar card de sequencia
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/streak_stats.py "${{ github.repository_owner }}" dist/streak.svg
+
+      - name: Conferir saidas
+        run: |
+          set -e
+          for f in dist/github-contribution-grid-snake.svg \
+                   dist/github-contribution-grid-snake-dark.svg \
+                   dist/streak.svg; do
+            test -s "$f" || { echo "faltou (ou vazio): $f"; exit 1; }
+            head -c 200 "$f" | grep -q "<svg" || { echo "nao e SVG: $f"; exit 1; }
+            echo "ok $f ($(stat -c%s "$f") bytes)"
+          done
+
+      - name: Publicar no branch output
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist

@@ -126,7 +126,7 @@ Do PDV fiscal ao app com pagamento.
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=alvaro209890&theme=dark&hide_border=true&locale=pt_BR&background=0D1117&ring=52B788&fire=95D5B2&currStreakLabel=52B788&sideLabels=CDE8D5&dates=7FBF9B" alt="sequencia de commits" />
+<img src="https://raw.githubusercontent.com/alvaro209890/alvaro209890/output/streak.svg" alt="sequencia de commits" width="495" />
 
 </div>
 

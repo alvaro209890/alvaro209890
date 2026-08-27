@@ -7,7 +7,7 @@
 <br/>
 
 <img src="https://komarev.com/ghpvc/?username=alvaro209890&label=Visitas&color=2d6a4f&style=flat-square" alt="visitas" />
-<img src="https://img.shields.io/badge/Foco-GIS%20%2B%20IA-2d6a4f?style=flat-square" alt="foco" />
+<img src="https://img.shields.io/badge/Foco-GIS%2BIA-2d6a4f?style=flat-square" alt="foco" />
 <img src="https://img.shields.io/badge/Local-Mato%20Grosso%2C%20Brasil-1b4332?style=flat-square&logo=googlemaps&logoColor=white" alt="local" />
 
 </div>
@@ -92,8 +92,8 @@ Do PDV fiscal ao app com pagamento.
 <br/><br/>
 
 <img src="https://img.shields.io/badge/QGIS-589632?style=for-the-badge&logo=qgis&logoColor=white"/>
-<img src="https://img.shields.io/badge/ArcGIS%20%2F%20arcpy-2C7AC3?style=for-the-badge&logo=arcgis&logoColor=white"/>
-<img src="https://img.shields.io/badge/GDAL%20%2F%20OGR-5CAE58?style=for-the-badge&logo=gis&logoColor=white"/>
+<img src="https://img.shields.io/badge/ArcGIS%2Farcpy-2C7AC3?style=for-the-badge&logo=arcgis&logoColor=white"/>
+<img src="https://img.shields.io/badge/GDAL%2FOGR-5CAE58?style=for-the-badge&logo=gis&logoColor=white"/>
 <img src="https://img.shields.io/badge/PostGIS-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/DeepSeek-4D6BFE?style=for-the-badge&logo=openai&logoColor=white"/>
 <img src="https://img.shields.io/badge/WhatsApp%20API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
@@ -122,7 +122,7 @@ Do PDV fiscal ao app com pagamento.
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=alvaro209890&bg_color=0d1117&color=52B788&line=52B788&point=ffffff&area=true&area_color=1b4332&hide_border=true&custom_title=Contribui%C3%A7%C3%B5es%20ao%20longo%20do%20tempo" alt="grafico de atividade" />
+<img width="100%" src="https://raw.githubusercontent.com/alvaro209890/alvaro209890/output/activity-graph.svg" alt="grafico de atividade" />
 
 <br/><br/>
 

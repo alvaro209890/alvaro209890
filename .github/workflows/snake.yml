@@ -7,7 +7,6 @@ on:
   push:
     branches: [main]
 
-# uma execucao por vez: as duas saidas vao pro mesmo branch "output"
 concurrency:
   group: animacoes-do-perfil
   cancel-in-progress: false
@@ -32,23 +31,27 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # 2) card de sequencia de commits -> dist/streak.svg
-      #    gerado aqui dentro para nao depender de servico publico de terceiro
-      #    (streak-stats.demolab.com estourava o rate limit e o camo cacheava o erro)
       - name: Gerar card de sequencia
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # a action da cobrinha roda em Docker como root e deixa dist/ sem
-          # permissao de escrita pro usuario do runner
           sudo chown -R "$(id -u):$(id -g)" dist
           python3 .github/scripts/streak_stats.py "${{ github.repository_owner }}" dist/streak.svg
+
+      # 3) grafico de atividade dos ultimos 30 dias -> dist/activity-graph.svg
+      - name: Gerar grafico de atividade
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/activity_graph.py "${{ github.repository_owner }}" dist/activity-graph.svg
 
       - name: Conferir saidas
         run: |
           set -e
           for f in dist/github-contribution-grid-snake.svg \
                    dist/github-contribution-grid-snake-dark.svg \
-                   dist/streak.svg; do
+                   dist/streak.svg \
+                   dist/activity-graph.svg; do
             test -s "$f" || { echo "faltou (ou vazio): $f"; exit 1; }
             head -c 200 "$f" | grep -q "<svg" || { echo "nao e SVG: $f"; exit 1; }
             echo "ok $f ($(stat -c%s "$f") bytes)"

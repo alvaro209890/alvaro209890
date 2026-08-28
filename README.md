@@ -10,6 +10,16 @@
 <img src="https://img.shields.io/badge/Foco-GIS%2BIA-2d6a4f?style=flat-square" alt="foco" />
 <img src="https://img.shields.io/badge/Local-Mato%20Grosso%2C%20Brasil-1b4332?style=flat-square&logo=googlemaps&logoColor=white" alt="local" />
 
+<br/><br/>
+
+<table>
+<tr>
+<td width="33%"><img width="100%" src="https://raw.githubusercontent.com/alvaro209890/alvaro209890/main/assets/card-limitless.svg" alt="Gojo Satoru"/></td>
+<td width="33%"><img width="100%" src="https://raw.githubusercontent.com/alvaro209890/alvaro209890/main/assets/card-gamble.svg" alt="Kinji Hakari"/></td>
+<td width="33%"><img width="100%" src="https://raw.githubusercontent.com/alvaro209890/alvaro209890/main/assets/card-amber.svg" alt="Hajime Kashimo"/></td>
+</tr>
+</table>
+
 </div>
 
 <br/>

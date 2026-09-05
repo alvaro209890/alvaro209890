@@ -1,0 +1,101 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 850 300' width='100%' height='300px' style='background:#0D1117; border-radius: 8px;'>
+  <defs>
+    <linearGradient id='activityGrad' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#52B788' stop-opacity='0.4'/>
+      <stop offset='100%' stop-color='#52B788' stop-opacity='0.0'/>
+    </linearGradient>
+    <filter id='glow' x='-20%' y='-20%' width='140%' height='140%'>
+      <feGaussianBlur stdDeviation='2' result='blur' />
+      <feMerge>
+        <feMergeNode in='blur' />
+        <feMergeNode in='SourceGraphic' />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Titulo e Resumo -->
+  <text x='65' y='38' fill='#52B788' font-size='18px' font-weight='700' font-family='"Segoe UI", Ubuntu, -apple-system, sans-serif'>Atividade de Contribuições</text>
+  <text x='65' y='56' fill='#CDE8D5' font-size='12px' font-family='"Segoe UI", Ubuntu, -apple-system, sans-serif'>Últimos 30 dias: <tspan fill='#FEFEFE' font-weight='bold'>372 contribuições</tspan></text>
+
+  <!-- Grade -->
+  
+        <line x1='65' y1='255.0' x2='810' y2='255.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='259.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>0</text>
+        
+        <line x1='65' y1='210.0' x2='810' y2='210.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='214.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>10</text>
+        
+        <line x1='65' y1='165.0' x2='810' y2='165.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='169.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>20</text>
+        
+        <line x1='65' y1='120.0' x2='810' y2='120.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='124.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>30</text>
+        
+        <line x1='65' y1='75.0' x2='810' y2='75.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='79.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>40</text>
+        
+
+  <!-- Area do Grafico -->
+  <path d='M 65.0 250.5 C 76.2 250.5, 78.7 201.0, 89.8 201.0 C 101.0 201.0, 103.5 183.0, 114.7 183.0 C 125.8 183.0, 128.3 192.0, 139.5 192.0 C 150.7 192.0, 153.2 160.5, 164.3 160.5 C 175.5 160.5, 178.0 223.5, 189.2 223.5 C 200.3 223.5, 202.8 138.0, 214.0 138.0 C 225.2 138.0, 227.7 111.0, 238.8 111.0 C 250.0 111.0, 252.5 196.5, 263.7 196.5 C 274.8 196.5, 277.3 174.0, 288.5 174.0 C 299.7 174.0, 302.2 246.0, 313.3 246.0 C 324.5 246.0, 327.0 106.5, 338.2 106.5 C 349.3 106.5, 351.8 210.0, 363.0 210.0 C 374.2 210.0, 376.7 192.0, 387.8 192.0 C 399.0 192.0, 401.5 223.5, 412.7 223.5 C 423.8 223.5, 426.3 174.0, 437.5 174.0 C 448.7 174.0, 451.2 169.5, 462.3 169.5 C 473.5 169.5, 476.0 174.0, 487.2 174.0 C 498.3 174.0, 500.8 187.5, 512.0 187.5 C 523.2 187.5, 525.7 201.0, 536.8 201.0 C 548.0 201.0, 550.5 160.5, 561.7 160.5 C 572.8 160.5, 575.3 223.5, 586.5 223.5 C 597.7 223.5, 600.2 151.5, 611.3 151.5 C 622.5 151.5, 625.0 250.5, 636.2 250.5 C 647.3 250.5, 649.8 246.0, 661.0 246.0 C 672.2 246.0, 674.7 255.0, 685.8 255.0 C 697.0 255.0, 699.5 255.0, 710.7 255.0 C 721.8 255.0, 724.3 214.5, 735.5 214.5 C 746.7 214.5, 749.2 255.0, 760.3 255.0 C 771.5 255.0, 774.0 255.0, 785.2 255.0 C 796.3 255.0, 798.8 250.5, 810.0 250.5 L 810.0 255.0 L 65.0 255.0 Z' fill='url(#activityGrad)' />
+  <path d='M 65.0 250.5 C 76.2 250.5, 78.7 201.0, 89.8 201.0 C 101.0 201.0, 103.5 183.0, 114.7 183.0 C 125.8 183.0, 128.3 192.0, 139.5 192.0 C 150.7 192.0, 153.2 160.5, 164.3 160.5 C 175.5 160.5, 178.0 223.5, 189.2 223.5 C 200.3 223.5, 202.8 138.0, 214.0 138.0 C 225.2 138.0, 227.7 111.0, 238.8 111.0 C 250.0 111.0, 252.5 196.5, 263.7 196.5 C 274.8 196.5, 277.3 174.0, 288.5 174.0 C 299.7 174.0, 302.2 246.0, 313.3 246.0 C 324.5 246.0, 327.0 106.5, 338.2 106.5 C 349.3 106.5, 351.8 210.0, 363.0 210.0 C 374.2 210.0, 376.7 192.0, 387.8 192.0 C 399.0 192.0, 401.5 223.5, 412.7 223.5 C 423.8 223.5, 426.3 174.0, 437.5 174.0 C 448.7 174.0, 451.2 169.5, 462.3 169.5 C 473.5 169.5, 476.0 174.0, 487.2 174.0 C 498.3 174.0, 500.8 187.5, 512.0 187.5 C 523.2 187.5, 525.7 201.0, 536.8 201.0 C 548.0 201.0, 550.5 160.5, 561.7 160.5 C 572.8 160.5, 575.3 223.5, 586.5 223.5 C 597.7 223.5, 600.2 151.5, 611.3 151.5 C 622.5 151.5, 625.0 250.5, 636.2 250.5 C 647.3 250.5, 649.8 246.0, 661.0 246.0 C 672.2 246.0, 674.7 255.0, 685.8 255.0 C 697.0 255.0, 699.5 255.0, 710.7 255.0 C 721.8 255.0, 724.3 214.5, 735.5 214.5 C 746.7 214.5, 749.2 255.0, 760.3 255.0 C 771.5 255.0, 774.0 255.0, 785.2 255.0 C 796.3 255.0, 798.8 250.5, 810.0 250.5' fill='none' stroke='#52B788' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' filter='url(#glow)'/>
+
+  <!-- Pontos -->
+  
+            <circle cx='65.0' cy='250.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='89.8' cy='201.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='114.7' cy='183.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='139.5' cy='192.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='164.3' cy='160.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='189.2' cy='223.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='214.0' cy='138.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='238.8' cy='111.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='263.7' cy='196.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='288.5' cy='174.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='313.3' cy='246.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='338.2' cy='106.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='363.0' cy='210.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='387.8' cy='192.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='412.7' cy='223.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='437.5' cy='174.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='462.3' cy='169.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='487.2' cy='174.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='512.0' cy='187.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='536.8' cy='201.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='561.7' cy='160.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='586.5' cy='223.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='611.3' cy='151.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='636.2' cy='250.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='661.0' cy='246.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='735.5' cy='214.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='810.0' cy='250.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+
+  <!-- Rotulos Eixo X -->
+  <text x='65.0' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>6 Ago</text><text x='189.2' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>11 Ago</text><text x='313.3' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>16 Ago</text><text x='437.5' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>21 Ago</text><text x='561.7' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>26 Ago</text><text x='685.8' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>31 Ago</text><text x='810.0' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>5 Set</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 850 300' width='100%' height='300px' style='background:#0D1117; border-radius: 8px;'>
+  <defs>
+    <linearGradient id='activityGrad' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#52B788' stop-opacity='0.4'/>
+      <stop offset='100%' stop-color='#52B788' stop-opacity='0.0'/>
+    </linearGradient>
+    <filter id='glow' x='-20%' y='-20%' width='140%' height='140%'>
+      <feGaussianBlur stdDeviation='2' result='blur' />
+      <feMerge>
+        <feMergeNode in='blur' />
+        <feMergeNode in='SourceGraphic' />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Titulo e Resumo -->
+  <text x='65' y='38' fill='#52B788' font-size='18px' font-weight='700' font-family='"Segoe UI", Ubuntu, -apple-system, sans-serif'>Atividade de Contribuições</text>
+  <text x='65' y='56' fill='#CDE8D5' font-size='12px' font-family='"Segoe UI", Ubuntu, -apple-system, sans-serif'>Últimos 30 dias: <tspan fill='#FEFEFE' font-weight='bold'>304 contribuições</tspan></text>
+
+  <!-- Grade -->
+  
+        <line x1='65' y1='255.0' x2='810' y2='255.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='259.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>0</text>
+        
+        <line x1='65' y1='210.0' x2='810' y2='210.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='214.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>20</text>
+        
+        <line x1='65' y1='165.0' x2='810' y2='165.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='169.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>40</text>
+        
+        <line x1='65' y1='120.0' x2='810' y2='120.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='124.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>60</text>
+        
+        <line x1='65' y1='75.0' x2='810' y2='75.0' stroke='#1B4332' stroke-width='1' stroke-dasharray='3,3'/>
+        <text x='53' y='79.0' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='end'>80</text>
+        
+
+  <!-- Area do Grafico -->
+  <path d='M 65.0 255.0 C 76.2 255.0, 78.7 255.0, 89.8 255.0 C 101.0 255.0, 103.5 255.0, 114.7 255.0 C 125.8 255.0, 128.3 255.0, 139.5 255.0 C 150.7 255.0, 153.2 255.0, 164.3 255.0 C 175.5 255.0, 178.0 86.2, 189.2 86.2 C 200.3 86.2, 202.8 228.0, 214.0 228.0 C 225.2 228.0, 227.7 252.8, 238.8 252.8 C 250.0 252.8, 252.5 243.8, 263.7 243.8 C 274.8 243.8, 277.3 252.8, 288.5 252.8 C 299.7 252.8, 302.2 255.0, 313.3 255.0 C 324.5 255.0, 327.0 255.0, 338.2 255.0 C 349.3 255.0, 351.8 149.2, 363.0 149.2 C 374.2 149.2, 376.7 214.5, 387.8 214.5 C 399.0 214.5, 401.5 75.0, 412.7 75.0 C 423.8 75.0, 426.3 194.2, 437.5 194.2 C 448.7 194.2, 451.2 212.2, 462.3 212.2 C 473.5 212.2, 476.0 246.0, 487.2 246.0 C 498.3 246.0, 500.8 243.8, 512.0 243.8 C 523.2 243.8, 525.7 255.0, 536.8 255.0 C 548.0 255.0, 550.5 255.0, 561.7 255.0 C 572.8 255.0, 575.3 252.8, 586.5 252.8 C 597.7 252.8, 600.2 250.5, 611.3 250.5 C 622.5 250.5, 625.0 255.0, 636.2 255.0 C 647.3 255.0, 649.8 255.0, 661.0 255.0 C 672.2 255.0, 674.7 255.0, 685.8 255.0 C 697.0 255.0, 699.5 243.8, 710.7 243.8 C 721.8 243.8, 724.3 250.5, 735.5 250.5 C 746.7 250.5, 749.2 255.0, 760.3 255.0 C 771.5 255.0, 774.0 255.0, 785.2 255.0 C 796.3 255.0, 798.8 255.0, 810.0 255.0 L 810.0 255.0 L 65.0 255.0 Z' fill='url(#activityGrad)' />
+  <path d='M 65.0 255.0 C 76.2 255.0, 78.7 255.0, 89.8 255.0 C 101.0 255.0, 103.5 255.0, 114.7 255.0 C 125.8 255.0, 128.3 255.0, 139.5 255.0 C 150.7 255.0, 153.2 255.0, 164.3 255.0 C 175.5 255.0, 178.0 86.2, 189.2 86.2 C 200.3 86.2, 202.8 228.0, 214.0 228.0 C 225.2 228.0, 227.7 252.8, 238.8 252.8 C 250.0 252.8, 252.5 243.8, 263.7 243.8 C 274.8 243.8, 277.3 252.8, 288.5 252.8 C 299.7 252.8, 302.2 255.0, 313.3 255.0 C 324.5 255.0, 327.0 255.0, 338.2 255.0 C 349.3 255.0, 351.8 149.2, 363.0 149.2 C 374.2 149.2, 376.7 214.5, 387.8 214.5 C 399.0 214.5, 401.5 75.0, 412.7 75.0 C 423.8 75.0, 426.3 194.2, 437.5 194.2 C 448.7 194.2, 451.2 212.2, 462.3 212.2 C 473.5 212.2, 476.0 246.0, 487.2 246.0 C 498.3 246.0, 500.8 243.8, 512.0 243.8 C 523.2 243.8, 525.7 255.0, 536.8 255.0 C 548.0 255.0, 550.5 255.0, 561.7 255.0 C 572.8 255.0, 575.3 252.8, 586.5 252.8 C 597.7 252.8, 600.2 250.5, 611.3 250.5 C 622.5 250.5, 625.0 255.0, 636.2 255.0 C 647.3 255.0, 649.8 255.0, 661.0 255.0 C 672.2 255.0, 674.7 255.0, 685.8 255.0 C 697.0 255.0, 699.5 243.8, 710.7 243.8 C 721.8 243.8, 724.3 250.5, 735.5 250.5 C 746.7 250.5, 749.2 255.0, 760.3 255.0 C 771.5 255.0, 774.0 255.0, 785.2 255.0 C 796.3 255.0, 798.8 255.0, 810.0 255.0' fill='none' stroke='#52B788' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' filter='url(#glow)'/>
+
+  <!-- Pontos -->
+  
+            <circle cx='189.2' cy='86.2' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='214.0' cy='228.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='238.8' cy='252.8' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='263.7' cy='243.8' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='288.5' cy='252.8' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='363.0' cy='149.2' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='387.8' cy='214.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='412.7' cy='75.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='437.5' cy='194.2' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='462.3' cy='212.2' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='487.2' cy='246.0' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='512.0' cy='243.8' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='586.5' cy='252.8' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='611.3' cy='250.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='710.7' cy='243.8' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+            <circle cx='735.5' cy='250.5' r='3.5' fill='#FEFEFE' stroke='#52B788' stroke-width='2'/>
+            
+
+  <!-- Rotulos Eixo X -->
+  <text x='65.0' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>29 Out</text><text x='189.2' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>3 Nov</text><text x='313.3' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>8 Nov</text><text x='437.5' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>13 Nov</text><text x='561.7' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>18 Nov</text><text x='685.8' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>23 Nov</text><text x='810.0' y='282' fill='#CDE8D5' font-size='11px' font-family='"Segoe UI", sans-serif' text-anchor='middle'>28 Nov</text>
+</svg>
